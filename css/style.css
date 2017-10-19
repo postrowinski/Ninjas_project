@@ -1,0 +1,163 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css?family=Geo|Londrina+Solid");
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("../fonts/BebasNeue.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MYRIADPROREGULAR.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Arial Mt';
+  src: url("../fonts/ArialMT.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Catull';
+  src: url("../fonts/Catull.ttf") format("truetype"); }
+
+/* VARIABLES */
+/* MIXIN */
+/* MEDIA QUERY*/
+/* GENERAL */
+html {
+  font-size: 10px; }
+
+.container {
+  max-width: 100rem; }
+
+/* NAV */
+.navbar-default {
+  border-color: transparent; }
+
+.navbar {
+  margin-top: 2.4rem;
+  position: absolute;
+  width: 100%;
+  background: transparent; }
+  .navbar .navbar-brand, .navbar .navbar-nav .navbar-links {
+    color: #ffffff; }
+    .navbar .navbar-brand:hover, .navbar .navbar-nav .navbar-links:hover {
+      color: #ffffff; }
+  .navbar .navbar-brand {
+    font-family: "Londrina Solid";
+    font-size: 4.8rem;
+    text-transform: uppercase; }
+  .navbar .navbar-links {
+    font-family: "Arial MT";
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
+    font-size: 1.6rem;
+    line-height: 100%;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem; }
+
+/* MAIN */
+.main {
+  color: #ffffff;
+  min-height: 45rem;
+  background: url("../image/main.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 11rem; }
+  .main .container {
+    position: relative; }
+  .main .main-phone {
+    position: absolute;
+    bottom: 0;
+    left: -4rem; }
+    @media (max-width: 991px) {
+      .main .main-phone {
+        display: none; } }
+  .main .main-header-md, .main .main-header-lg {
+    font-family: 'Bebas Neue';
+    text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25); }
+  .main .main-header-md {
+    margin-bottom: 0;
+    font-size: 7.2rem; }
+  .main .main-header-lg {
+    position: relative;
+    top: -2rem;
+    font-size: 12.8rem;
+    margin: 0 0 2.3rem; }
+  .main p {
+    font-family: "Arial Mt";
+    color: #104b52;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
+  .main .btn {
+    font-family: "Londrina Solid";
+    letter-spacing: 0.1rem;
+    font-size: 2.2rem;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to top, #df6865 0%, #e74c48 99%, #e74c48 100%);
+    display: block;
+    margin: 3rem auto 4rem;
+    text-transform: uppercase;
+    padding: 1.2rem 1.5rem;
+    transition: padding ease 0.3s, border-radius ease 0.6s; }
+    .main .btn:hover {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      color: #ffffff;
+      border-radius: 2.7rem; }
+    .main .btn .main-button-arrow {
+      position: absolute;
+      left: 110%;
+      bottom: 1rem; }
+
+/* SERVICES */
+.services {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, #f7f7f7 4px, #f7f7f7 5px);
+  min-height: 200px;
+  width: 100%;
+  position: relative; }
+  .services .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
+  .services .services-header {
+    color: #4e918d;
+    font-family: "Londrina Solid";
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    display: inline-block; }
+  .services .icon-svg {
+    display: inline-block;
+    position: relative;
+    bottom: 0.4rem;
+    width: 2.9rem;
+    height: 3rem; }
+  .services .icon-svg.icon-tweet {
+    margin: 1.5rem 0 0 2rem; }
+  .services .services-tweet-text {
+    position: relative;
+    background: #dee9bb;
+    width: 95%;
+    margin: 2.3rem 0 0 10%;
+    border-radius: 2rem;
+    color: #39726e; }
+    .services .services-tweet-text img {
+      position: absolute;
+      bottom: -1.6rem;
+      left: 3rem; }
+    .services .services-tweet-text .services-chat-bubble {
+      padding: 1.8rem 1.5rem;
+      margin-bottom: 0; }
+  .services .services-bg-rugged {
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    height: 6rem;
+    width: 100%;
+    background: url("../image/paper.png"); }
+
+/* APPS */
+.apps {
+  min-height: 30rem;
+  background-image: url("../image/main.jpg");
+  background-repeat: repeat-x;
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */
