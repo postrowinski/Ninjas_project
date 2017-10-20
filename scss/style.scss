@@ -33,6 +33,8 @@ $main-white: #ffffff;
 $main-gray: #104b52;
 $main-company-color: #4e918d;
 $main-company-darker-color: #39726e;
+$header-shadow-text: 0 2px 0 rgba(34, 78, 89, 0.25);
+$main-light-green: #9aac49;
 
 /* MIXIN */
 
@@ -78,6 +80,47 @@ html {
     max-width: 100rem;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.main-header-md, .main-header-lg {
+  color: $main-white;
+  font-family: "Bebas Neue";
+}
+
+.main-header-md {
+  margin-bottom: 0;
+  font-size: 7.2rem;
+}
+
+.main-header-lg {
+  position: relative;
+  top: -2rem;
+  font-size: 12.8rem;
+  margin: 0 0 2.3rem;
+}
+
+.btn {
+    font-family: "Londrina Solid";
+    letter-spacing: 0.1rem;
+    color: $main-white;
+    font-size: 2.2rem;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to top, #df6865 0%, #e74c48 99%, #e74c48 100%);
+    display: block;
+    margin: 3rem auto 4rem;
+    text-transform: uppercase;
+    padding: 1.2rem 1.5rem;
+    transition: padding ease 0.3s, border-radius ease 0.6s;
+    &:hover {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: $main-white;
+        border-radius: 2.7rem;
+    }
+}
 /* NAV */
 .navbar-default {
     border-color: transparent;
@@ -138,18 +181,6 @@ html {
         text-shadow: 0 2px 0 rgba(34, 78, 89, 0.25);
     }
 
-    .main-header-md {
-        margin-bottom: 0;
-        font-size: 7.2rem;
-    }
-
-    .main-header-lg {
-        position: relative;
-        top: -2rem;
-        font-size: 12.8rem;
-        margin: 0 0 2.3rem;
-    }
-
     p {
         font-family: "Arial Mt";
         color: $main-gray;
@@ -157,21 +188,9 @@ html {
     }
 
     .btn {
-        font-family: "Londrina Solid";
-        letter-spacing: 0.1rem;
-        font-size: 2.2rem;
-        position: relative;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
-        background-image: linear-gradient(to top, #df6865 0%, #e74c48 99%, #e74c48 100%);
-        display: block;
-        margin: 3rem auto 4rem;
-        text-transform: uppercase;
-        padding: 1.2rem 1.5rem;
-        transition: padding ease 0.3s, border-radius ease 0.6s;
         &:hover {
             padding-left: 3rem;
             padding-right: 3rem;
-            color: $main-white;
             border-radius: 2.7rem;
         }
         .main-button-arrow {
@@ -255,4 +274,89 @@ html {
     background-image: url("../image/main.jpg");
     background-repeat: repeat-x;
     background-size: cover;
+
+    .container > .row {
+        margin-top: 8rem;
+    }
+
+    .col-flex {
+        display: flex;
+        height: 19rem;
+        p {
+            display: flex;
+            color: $main-white;
+            align-items: flex-end;
+        }
+    }
+
+    .main-header-md {
+        margin-bottom: 0;
+        font-size: 4.3rem;
+        text-shadow: $header-shadow-text;
+    }
+
+    .main-header-lg {
+        margin-bottom: 0;
+        text-shadow: $header-shadow-text;
+    }
+
+    #app-carousel {
+        margin-top: 2rem;
+    }
+
+    .app-slide-item {
+        background: #f3efe4;
+        border-radius: 0.3rem;
+        margin-bottom: 4rem;
+        .slide-info, .slide-view {
+            margin: 1rem;
+        }
+        .slide-info {
+            -webkit-flex-basis: 60%;
+            flex-basis: 60%;
+            min-height: 20rem;
+            h3 {
+                font-family: "Londrina Solid";
+                text-transform: uppercase;
+                color: $main-light-green;
+                margin: 0 0 1rem;
+            }
+            p {
+                font-family: 'Arial Mt';
+                font-size: 1.1rem;
+                line-height: 1.8;
+            }
+        }
+        .slide-view {
+            -webkit-flex-basis: 40%;
+            flex-basis: 40%;
+            .app-caruousel-img-placeholder {
+                width: 10rem;
+                height: 10rem;
+                margin: 0.5rem auto 0;
+                border-radius: 1.4rem;
+                background-image: linear-gradient(to top, #ffbb4a 0%, #ffd972 100%);
+            }
+            .btn {
+                margin: 1.5rem auto;
+                padding: 0 1rem;
+                font-size: 1.8rem;
+                line-height: 2.3;
+            }
+        }
+
+        .slide-button-buy {
+            border-top: 1px solid #dcd8cf;
+        }
+
+        .slide-button-buy .flex-container {
+            justify-content: space-between;
+            a {
+                margin: 1rem;
+                &:hover {
+
+                }
+            }
+        }
+    }
 }
