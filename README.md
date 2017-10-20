@@ -1,4 +1,1 @@
-It's basic template with used:
-- Sass
-- Grunt
-- Bootstrap
+Project website: https://postrowinski.github.io/Ninjas_project/
