@@ -23,6 +23,12 @@
 html {
   font-size: 10px; }
 
+h3 {
+  font-family: "Londrina Solid";
+  text-transform: uppercase;
+  color: #9aac49;
+  margin: 0 0 1rem; }
+
 .container {
   max-width: 100rem; }
 
@@ -32,6 +38,14 @@ html {
 .main-header-md, .main-header-lg {
   color: #ffffff;
   font-family: "Bebas Neue"; }
+
+.main-header-sm {
+  color: #4e918d;
+  font-family: "Londrina Solid";
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  display: inline-block; }
 
 .main-header-md {
   margin-bottom: 0;
@@ -124,20 +138,19 @@ html {
 
 /* SERVICES */
 .services {
-  background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, #f7f7f7 4px, #f7f7f7 5px);
+  background: url("../image/services-bg.png") repeat-x;
+  background-size: contain;
+  z-index: 2;
   min-height: 200px;
   width: 100%;
-  position: relative; }
+  position: relative;
+  padding-bottom: 10rem; }
+  @media (max-width: 1300px) {
+    .services {
+      background-size: cover; } }
   .services .container {
     padding-top: 5rem;
     padding-bottom: 3rem; }
-  .services .services-header {
-    color: #4e918d;
-    font-family: "Londrina Solid";
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    line-height: 3rem;
-    display: inline-block; }
   .services .icon-svg {
     display: inline-block;
     position: relative;
@@ -160,20 +173,14 @@ html {
     .services .services-tweet-text .services-chat-bubble {
       padding: 1.8rem 1.5rem;
       margin-bottom: 0; }
-  .services .services-bg-rugged {
-    position: absolute;
-    bottom: -6rem;
-    left: 0;
-    height: 6rem;
-    width: 100%;
-    background: url("../image/paper.png"); }
 
 /* APPS */
 .apps {
   min-height: 30rem;
-  background-image: url("../image/main.jpg");
-  background-repeat: repeat-x;
-  background-size: cover; }
+  background: url("../image/main.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin-top: -15rem; }
   .apps .container > .row {
     margin-top: 8rem; }
   .apps .col-flex {
@@ -202,11 +209,6 @@ html {
       -webkit-flex-basis: 60%;
       flex-basis: 60%;
       min-height: 20rem; }
-      .apps .app-slide-item .slide-info h3 {
-        font-family: "Londrina Solid";
-        text-transform: uppercase;
-        color: #9aac49;
-        margin: 0 0 1rem; }
       .apps .app-slide-item .slide-info p {
         font-family: 'Arial Mt';
         font-size: 1.1rem;
@@ -231,5 +233,168 @@ html {
       justify-content: space-between; }
       .apps .app-slide-item .slide-button-buy .flex-container a {
         margin: 1rem; }
+      .apps .app-slide-item .slide-button-buy .flex-container .link-center {
+        margin: 1rem auto; }
+  .apps .carousel-navigation {
+    margin-bottom: 4rem;
+    text-align: center; }
+    .apps .carousel-navigation .bullet {
+      display: inline-block;
+      width: 2.3rem;
+      height: 2.3rem;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(255, 255, 255, 0.2);
+      background: #ffffff;
+      border-radius: 50%;
+      margin: 0 0.3rem;
+      opacity: 0.9; }
+      .apps .carousel-navigation .bullet:hover {
+        cursor: pointer; }
+    .apps .carousel-navigation .bullet.active {
+      background-color: #e74c48; }
+
+/* TEAM */
+.team {
+  background: url("../image/team-test-bg.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: 2;
+  min-height: 200px;
+  position: relative;
+  padding-bottom: 4rem; }
+  .team .main-header-md, .team .main-header-lg {
+    color: #4e918d; }
+  .team .main-header-md {
+    font-size: 3rem;
+    margin-top: 7rem; }
+  .team .main-header-lg {
+    font-size: 10.8rem;
+    margin-bottom: 0; }
+  .team .team-image-placeholder {
+    position: relative;
+    width: 18.6rem;
+    height: 18.6rem;
+    background: #7fbcbe;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    border: 1px solid #5d8c90;
+    box-shadow: inset 0 1px 0 1px rgba(255, 255, 255, 0.5); }
+    .team .team-image-placeholder:after {
+      position: absolute;
+      content: '';
+      left: 0.6rem;
+      top: 0.6rem;
+      width: 17.2rem;
+      height: 17.2rem;
+      border-radius: 50%;
+      z-index: 1;
+      background-color: #ffffff; }
+  .team .team-info {
+    max-width: 25rem; }
+    .team .team-info .main-header-sm {
+      margin: 4rem 0 0; }
+    .team .team-info h3 {
+      font-size: 1.8rem; }
+    .team .team-info p {
+      font-family: "Arial Mt";
+      color: #7e7e7e;
+      font-size: 1.2rem; }
+    .team .team-info .fa {
+      width: 2.3rem;
+      margin-right: 0.3rem;
+      height: 2.3rem;
+      border-radius: 50%;
+      line-height: 2.3rem;
+      text-align: center;
+      font-size: 1.6rem;
+      color: #ffffff; }
+    .team .team-info .fa-linkedin {
+      background-color: #224e59; }
+    .team .team-info .fa-facebook {
+      background-color: #7bb7bf; }
+    .team .team-info .fa-twitter {
+      background-color: #acdcd9; }
+    .team .team-info .fa-dribbble {
+      background-color: #f5989d; }
+
+/* CONTACT */
+.contact {
+  background: url("../image/main.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative; }
+  .contact .rugged-paper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0; }
+  .contact .main-header-md {
+    margin: 8rem 0 1rem;
+    font-size: 42px; }
+  .contact .main-header-lg {
+    font-size: 88px; }
+  .contact input, .contact textarea {
+    font-size: 1.8rem;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 2px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid #4790a2;
+    min-height: 5rem;
+    max-width: 92%; }
+  .contact textarea {
+    resize: none; }
+  .contact input::placeholder, .contact textarea::placeholder {
+    color: #7f7367;
+    font-size: 1rem;
+    opacity: 0.5;
+    line-height: 2rem; }
+  .contact .flex-container {
+    display: flex;
+    margin-top: 2rem; }
+  .contact .box-recaptcha {
+    display: flex;
+    flex: 1; }
+  .contact .recaptcha {
+    width: 6.7rem;
+    height: 5.7rem;
+    text-align: center;
+    margin-right: 1rem;
+    border-radius: 10%; }
+  .contact .recaptcha-info {
+    padding-top: 0.8rem;
+    max-width: 14rem;
+    color: #ffffff;
+    font-size: 1rem; }
+  .contact .btn[type='submit'] {
+    margin: 0 7rem 0;
+    height: 4.5rem;
+    padding: 0 2.5rem; }
+  .contact .contact-info {
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(34, 78, 89, 0.25);
+    line-height: 1.3; }
+  .contact .carousel-info {
+    background: url("../image/carousel-info-bg.png");
+    padding: 1rem;
+    border-radius: 6px; }
+    .contact .carousel-info .flex-container {
+      margin-top: 0;
+      justify-content: space-between; }
+      .contact .carousel-info .flex-container p {
+        align-self: flex-end;
+        color: #959595; }
+    .contact .carousel-info h3 {
+      color: #5a9692; }
+  .contact .carousel-info:nth-of-type(n + 2) {
+    margin-top: 1.5rem; }
+  .contact .carousel-nav {
+    color: #ffffff;
+    margin: 0 1rem 1rem auto; }
+    .contact .carousel-nav span {
+      margin: 0 0.5rem; }
+    .contact .carousel-nav:hover {
+      cursor: pointer; }
+  .contact .contact-carousel-prev, .contact .contact-carousel-next, .contact span {
+    color: #444444; }
+  .contact span[class='active'] {
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
