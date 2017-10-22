@@ -29,16 +29,16 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="navbar-links" href="#">Home</a></li>
-                    <li><a class="navbar-links" href="#">Apps</a></li>
-                    <li><a class="navbar-links" href="#">Team</a></li>
-                    <li><a class="navbar-links" href="#">Services</a></li>
-                    <li><a class="navbar-links" href="#">Contact</a></li>
+                    <li><a class="js-nav-link navbar-links" href="#js-main">Home</a></li>
+                    <li><a class="js-nav-link navbar-links" href="#js-services">Services</a></li>
+                    <li><a class="js-nav-link navbar-links" href="#js-app">Apps</a></li>
+                    <li><a class="js-nav-link navbar-links" href="#js-team">Team</a></li>
+                    <li><a class="js-nav-link navbar-links" href="#js-contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="main">
+    <section id="js-main" class="main">
         <div class="container">
             <div class="row">
                     <img class="main-phone" src="image/main-phone.png" alt="phone">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="js-services" class="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section class="apps">
+    <section id="js-app" class="apps">
         <img class="rugged-paper" src="image/rugged-paper.png" alt="" />
         <div class="container">
             <div class="row">
@@ -174,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section id="js-team" class="team">
         <div class="container">
             <h2 class="main-header-md">we are a small team</h2>
             <h1 class="main-header-lg">with big ideas!</h1>
@@ -236,7 +236,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="js-contact" class="contact">
         <div class="container">
             <img class="rugged-paper" src="image/rugged-paper.png" alt="" />
             <h2 class="main-header-md">We would love</h2>
@@ -309,10 +309,10 @@
                 <div class="footer-nav">
                     <h4>Copyright Mobile Ninjas 2012</h4>
                     <ul class="nav">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Apps</li></a>
-                        <a href="#"><li>Team</li></a>
-                        <a href="#"><li>Contact</li></a>
+                        <a class='js-nav-link' href="#js-main"><li>Home</li></a>
+                        <a class='js-nav-link' href="#js-app"><li>Apps</li></a>
+                        <a class='js-nav-link' href="#js-team"><li>Team</li></a>
+                        <a class='js-nav-link' href="#js-contact"><li>Contact</li></a>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -326,6 +326,10 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-top-btn">
+        <div class="arrow-up"></div>
+        <p class="text-scroll-top-btn">UP</p>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

@@ -175,6 +175,24 @@ h3 {
             color: $main-white;
         }
     }
+
+    .navbar-links {
+        position: relative;
+        &:hover {
+            &:before {
+                @media (min-width: 768px) {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 4rem;
+                    bottom: 3rem;
+                    left: 0;
+                    background: url('../image/nav-hover.png') repeat-x;
+                }
+            }
+        }
+    }
+
     .navbar-brand {
         font-family: "Londrina Solid";
         font-size: 4.8rem;
@@ -209,6 +227,35 @@ h3 {
         @media #{$phone} {
             text-align: center;
         }
+    }
+}
+
+/* SCROLL TOP BTN */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    z-index: 3;
+    right: 2rem;
+    background-color: #d9e2ad;
+    padding: 1rem 1.5rem 0.5rem;
+    color: #f5f1e6;
+    &:hover {
+        cursor: pointer;
+    }
+    .arrow-up {
+        width: 0;
+        height: 0;
+        margin: auto;
+        border-left: 1.8rem solid transparent;
+        border-right: 1.8rem solid transparent;
+        border-bottom: 1.8rem solid #f5f1e6;;
+    }
+    .text-scroll-top-btn {
+        font-family: "Londrina Solid";
+        font-size: 4.9rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 1;
     }
 }
 
